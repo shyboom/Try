@@ -1,0 +1,6 @@
+#title_holder.todo,#title_holder.doing,#title_holder.done,#title_holder.complete,#title_holder.terminated{
+	background-color: #039be5;
+}
+#command_bar_title_icon.complete,#command_bar_title_icon.todo,#command_bar_title_icon.doing,#command_bar_title_icon.done,#command_bar_title_icon.terminated{
+	background-color: #039be5;
+}
