@@ -31,7 +31,6 @@ public class ItemController {
 
     @RequestMapping(value = "/getItem/{id}", method = RequestMethod.GET)
     public String getItem(@PathVariable("id") Integer id) {
-        system.out.println("查询ID");
         return itemService.get(id).toString();
     }
     @RequestMapping(value = "/getItemWithName/{name}", method = RequestMethod.GET)
