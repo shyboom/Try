@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bupt.dao.ItemMapper">
+
+    <select id="list" resultType="com.bupt.pojo.Item">
+        select * from item
+    </select>
+    
+    <select id="find" resultType="com.bupt.pojo.Item">
+    	select * from item where name like '%${_parameter}%'
+    </select>
+</mapper>
+
+<!-- 拼接字符串${} https://blog.csdn.net/soonfly/article/details/63385018-->

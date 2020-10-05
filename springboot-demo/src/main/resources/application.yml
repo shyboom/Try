@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: Business
+  datasource:
+    url: jdbc:mysql://localhost:3306/hello?useUnicode=true&characterEncoding=UTF-8&&useSSL=false
+    username: bupt
+    password: bupt@506
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: mappers/*.xml
+  type-aliases-package: com.bupt.dao
